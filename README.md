@@ -1,5 +1,32 @@
 # Build a Large Language Model (From Scratch)
 
+## How to run in Colab.
+Go to ipynb file
+
+Replace the URL with https://colab.research.google.com/github/5amfung/...
+
+Add a code cell and copy the following to the cell.
+```
+%%writefile requirements.txt
+torch >= 2.0.1        # all
+jupyterlab >= 4.0     # all
+tiktoken >= 0.5.1     # ch02; ch04; ch05
+matplotlib >= 3.7.1   # ch04; ch05
+tensorflow >= 2.15.0  # ch05
+tqdm >= 4.66.1        # ch05; ch07
+numpy >= 1.25, < 2.0  # dependency of several other libraries like torch and pandas
+pandas >= 2.2.1       # ch06
+psutil >= 5.9.5       # ch07; already installed automatically as dependency of torch
+```
+
+Run
+```
+!pip install -r requirements.txt
+```
+
+
+
+
 This repository contains the code for developing, pretraining, and finetuning a GPT-like LLM and is the official code repository for the book [Build a Large Language Model (From Scratch)](http://mng.bz/orYv).
 
 <br>
