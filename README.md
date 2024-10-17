@@ -5,10 +5,10 @@ Go to ipynb file
 
 Replace the URL with https://colab.research.google.com/github/5amfung/...
 
-Add a code cell and copy the following to the cell.
+Do this only for the exercise that uses tiktoken.  Add a code cell and copy the following to the cell.
 ```
 %%writefile requirements.txt
-tiktoken >= 0.5.1     # ch02; ch04; ch05
+tiktoken >= 0.5.1 
 ```
 
 Run
